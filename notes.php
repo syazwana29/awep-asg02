@@ -13,7 +13,8 @@
 
 <body>
   <div>
-    <button class="mt-10 ml-4 text-5xl">&lt;</button>
+    <button class="mt-6 ml-4 text-5xl">&lt;</button>
+    <h1 class="text-2xl absolute font-semibold ml-44">Notes</h1>
   </div>
 </body>
 
