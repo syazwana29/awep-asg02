@@ -25,7 +25,8 @@
 
     <p class="text-sm font-medium mt-2 mb-1">Password</p>
     <input type="password"></input>
-
+    <br>
+    <button class="mt-10 ml-20 text-2xl">Login</button>
   </div>
 </body>
 
