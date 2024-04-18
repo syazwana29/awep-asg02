@@ -13,7 +13,11 @@
 
 <body class="bg-blue-100">
 
-  <img src="aweplogo.png">
+  <div>
+    <img src="aweplogo.png">
+    <h1 class="text-purple-900 ml-20 text-4xl font-bold">Welcome</h1>
+    <p class="text-purple-900 ml-20 text-2xl">Log In to contine</p>
+  </div>
 
 </body>
 
