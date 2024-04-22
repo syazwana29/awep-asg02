@@ -18,26 +18,23 @@
     <h1 class="text-2xl absolute font-bold ml-36">Notes</h1>
   </div>
 
-  <h1 class="underline text-4xl mt-20 ml-6">Data Growth</h1>
+  <h1 class="underline text-4xl mt-20 ml-6">Data Challenges</h1>
 
-  <p class="mt-6 mb-6 ml-6">One of the most pressing Big Data challenges is storage.
-    Data is growing exponentially with time, and with that,
-    enterprises are struggling to store these huge sets of
-    data. Much of this data is extracted from images, audio,
-    documents, text files, etc. that are unstructured and not in
-    databases. It is difficult to extract and analyze such
-    unstructured data. These issues are a part of the Big Data
-    infrastructure challenges.
+  <p class="mt-6 mb-6 ml-6">Big Data has been normalcy in most businesses today,
+    but that doesn't mean that the journey is always smooth.
+    Gartner reported in 2016 that companies had been
+    bogging down right in the pilot phase.
   </p>
   <br>
-  <p class="mt-6 mb-6 ml-6">Dealing with rapid data growth can be facilitated through
-    converged and hyper-converged infrastructure and
-    software-defined storage. Additionally, compression,
-    tiering, and deduplication can reduce space consumption,
-    as well as cut costs on storage. Enterprises also use
-    tools such as Big Data Analytics software, Hadoop,
-    NoSQL database, Spark, AI, Machine Learning, BI
-    applications, etc. to deal with this issue.
+  <p class="mt-6 mb-6 ml-6">According to a 2017 survey by NewVantage Partners,
+    only 48.4 percent out of the 95 percent of the Fortune 1000
+    companies that adopted Big Data had generated any
+    valueable result for their investment.
+  </p>
+  <p class="mt-6 mb-6 ml-6">Evidently, there are major Big Data challenges faced by
+    organizations. Let's discuss some of these challenges
+    that most organizations are bound to face during their Big
+    Data initiative anf how some of them can be resolved.
   </p>
 
 </body>
