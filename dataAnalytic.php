@@ -20,6 +20,11 @@
 
   <h1 class="underline text-4xl mt-20 ml-6">Big Data Analytic</h1>
 
+  <p>For different stages of business analytics huge amount of
+    data is processed at various steps. Depending on the
+    stage of workflow and the requirement of data
+    analysis, there are four main kinds of analytics-
+  </p>
 
 </body>
 
