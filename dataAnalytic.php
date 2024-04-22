@@ -20,11 +20,21 @@
 
   <h1 class="underline text-4xl mt-20 ml-6">Big Data Analytic</h1>
 
-  <p>For different stages of business analytics huge amount of
+  <p class="mt-6 mb-6 ml-6">For different stages of business analytics huge amount of
     data is processed at various steps. Depending on the
     stage of workflow and the requirement of data
-    analysis, there are four main kinds of analytics-
+    analysis, there are four main kinds of analytics -
   </p>
+
+  <br>
+  <div>
+    <p class="mb-2 ml-6">a&#41; Descriptive</p>
+    <p class="mb-2 ml-6">b&#41; Diagnostic</p>
+    <p class="mb-2 ml-6">c&#41; Predictive</p>
+    <p class="mb-2 ml-6">d&#41; Prescriptive</p>
+
+
+  </div>
 
 </body>
 
