@@ -25,7 +25,6 @@
     Gartner reported in 2016 that companies had been
     bogging down right in the pilot phase.
   </p>
-  <br>
   <p class="mt-6 mb-6 ml-6">According to a 2017 survey by NewVantage Partners,
     only 48.4 percent out of the 95 percent of the Fortune 1000
     companies that adopted Big Data had generated any
