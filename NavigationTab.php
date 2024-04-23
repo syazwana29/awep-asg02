@@ -8,8 +8,11 @@
     <title>Navigation Tab</title>
 </head>
 
-<body>
-
+<body class="bg-gradient-to-br from-purple-50 " style="background-color: #AA51C4;">
+    <!-- Your content here -->
 </body>
+
+
+
 
 </html>
