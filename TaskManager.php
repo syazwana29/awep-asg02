@@ -11,7 +11,15 @@
 
 <body class="bg-gradient-to-b from-white to-blue-200 h-screen relative">
 
+    <p class="text-2xl font-bold"> Task Manager</p>
+    <p class="text-xl"> To Do</p>
 
+    <div>
+        <div>Organise Books</div>
+        <div>Finish UXD checklist</div>
+        <div>Create Survey for UI</div>
+        <div>Wash Dishes</div>
+    </div>
 
 
     <!-- Navigation Bar at the Bottom -->

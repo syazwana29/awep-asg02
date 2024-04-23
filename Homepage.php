@@ -15,36 +15,41 @@
         <p class="text-xl font-bold">Home</p>
         <img src="./assets/smallLogo.png" alt="logo" class="w-14 h-14">
     </div>
+    <br>
     <div>
-        <h1>Welcome</h1>
+        <p class="text-2xl font-bold">Welcome</p>
         <p>We're here to assist you to explore educational journey</p>
         <br>
         <br>
-        <div style="display: flex; justify-content: space-between;">
-            <div>Study Schedule</div>
-            <div>Time Tracking</div>
-            <div>Task Manager</div>
-        </div>
-        <br>
-
-        <h1>Others</h1>
-        <div style="display: flex; justify-content: space-between;">
-            <div>Notes</div>
-            <div>Exam</div>
-        </div>
-
-        <br>
-        <br>
-        <div>
-            <div>
-                <p>"Aim to be 1% better than yesterday"</p>
-                <p>-Unknown.</p>
+        <div class="container mx-auto">
+            <div class="flex justify-between">
+                <div class="bg-white rounded-lg p-4"> <img src="./assets/Studysched.png" alt="schedule">
+                    Study Schedule</div>
+                <div class="bg-white rounded-lg p-4"><img src="./assets/timetracker.png" alt="time tracker">Time Tracking</div>
+                <div class="bg-white rounded-lg p-4"><img src="./assets/task.png" alt="task manager">Task Manager</div>
             </div>
-            <div>
+        </div>
+        <br>
+        <p class="text-xl font-bold">Others</p>
+        <div class="container mx-auto">
+            <div class="flex justify-between">
+                <div class="bg-white rounded-lg p-4">Notes</div>
+                <div class="bg-white rounded-lg p-4">Exam</div>
+            </div>
+        </div>
+        <br><br>
+        <div class="container mx-auto">
+            <div class="bg-white rounded-lg p-4">
+                <p>"Aim to be 1% better than yesterday"</p>
+                <p>- Unknown.</p>
+            </div>
+            <br>
+            <div class="bg-white rounded-lg p-4">
                 About Us
             </div>
-
         </div>
+
+    </div>
     </div>
 
 
