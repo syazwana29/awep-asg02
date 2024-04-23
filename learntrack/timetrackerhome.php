@@ -14,7 +14,7 @@
     <!-- Navigation Bar at the Bottom -->
     <div class="fixed bottom-0 left-0 w-full bg-yellow-300 p-10 z-10 flex justify-center">
         <!-- Circular element protruding out with thicker border -->
-        <div class="bg-white h-20 w-20 rounded-full absolute bottom-0 transform -translate-y-1/2 translate-y-1/3 border-8 border-yellow-300"></div>
+        <div class="bg-yellow-300 h-24 w-24 rounded-full absolute bottom-0 transform -translate-y-1/3"></div>
     </div>
 
 </body>
