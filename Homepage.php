@@ -9,7 +9,8 @@
 
 </head>
 
-<body>
+<body class="bg-blue-100">
+
 
 </body>
 
