@@ -1,5 +1,22 @@
 <?php
+session_start();
 
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $username = $_POST["username"];
+  $password = $_POST["password"];
+
+  $valid_username = "22FTT1503";
+  $valid_password = "password123";
+
+  if ($username === $valid_username && $password === $valid_password) {
+    $_SESSION["authenticated"] = true;
+
+    header("Location: mainEvent.php");
+    exit();
+  } else {
+    $error_message = "Invalid username or password. Please try again.";
+  }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
