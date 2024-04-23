@@ -12,7 +12,7 @@
 
 <body class="bg-blue-100">
   <div>
-    <button class="mt-6 ml-4 text-5xl">&lt;</button>
+    <button class="mt-6 ml-4 text-5xl" a href="Homepage.php">&lt;</button>
     <h1 class="text-2xl absolute font-semibold ml-36">Notes</h1>
   </div>
 
@@ -27,24 +27,28 @@
         <p class="mt-2">For different stages of business analytics huge amount
           of data is processed ay various steps. Depending on the
           stage of...</p>
+        <a href="dataAnalytic.php" class="text-blue-500">Learn More</a>
       </div>
       <div class="bg-white rounded-lg shadow-md p-6 mt-2">
         <h1 class="font-bold text-xl">Data Growth</h1>
         <p class="mt-2">One of the most pressing Big Data challenges is
           storage. Data is growing exponentially with time, and
           with...</p>
+        <a href="dataGrowth.php" class="text-blue-500">Learn More</a>
       </div>
       <div class="bg-white rounded-lg shadow-md p-6 mt-2">
         <h1 class="font-bold text-xl">Data Challenges</h1>
         <p class="mt-2">Big Data has seen normalcy in most business today,
           but that doesn't mean that the journey is always
           smooth. Ga...</p>
+        <a href="dataChallenges.php" class="text-blue-500">Learn More</a>
       </div>
       <div class="bg-white rounded-lg shadow-md p-6 mt-2">
         <h1 class="font-bold text-xl">Real Life use cases</h1>
         <p class="mt-2">Big Data can help you address a range of business
           activities, from customer experience to analytics. Here
           are just a few...</p>
+        <a href="realLife.php" class="text-blue-500">Learn More</a>
       </div>
     </div>
 </body>
