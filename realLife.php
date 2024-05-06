@@ -1,7 +1,5 @@
 <?php
-
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,12 +12,10 @@
 
 <body class="bg-purple-200">
   <div>
-    <button class="mt-6 ml-4 text-5xl">&lt;</button>
+    <button class="mt-6 ml-4 text-5xl" a href="notes.php">&lt;</button>
     <h1 class="text-2xl absolute font-bold ml-36">Notes</h1>
   </div>
-
   <h1 class="underline text-4xl mt-20 ml-6">Real Life uses cases</h1>
-
   <p class="mt-6 mb-6 ml-6">Big data can help you address a range of business
     activities, from customer experience to analytics. Here
     are just a few.
@@ -27,6 +23,7 @@
   <br>
   <div>
     <p class="mb-2 ml-6">Healthcare:</p>
+    <p class="mb-2 ml-6">Giner app uses Big Data for mental health monitoring
     <p class="mb-2 ml-6 mt-6">Giner app uses Big Data for mental health monitoring
       Founded by researches from the Massachusetts Institute
       of Technology, the stratup called Giner.io makes use of
@@ -69,6 +66,7 @@
 
 
   </div>
+
 
 </body>
 
