@@ -10,16 +10,32 @@
 </head>
 
 <body class="bg-gradient-to-b from-white to-blue-200 h-screen relative">
-
-    <p class="text-2xl font-bold"> Task Manager</p>
-    <p class="text-xl"> To Do</p>
-
-    <div>
-        <div>Organise Books</div>
-        <div>Finish UXD checklist</div>
-        <div>Create Survey for UI</div>
-        <div>Wash Dishes</div>
+    <img src="./assets/left-arrow.png" alt="backarrow" class="h-10 w-10">
+    <p class="text-xl font-bold text-center">Task Manager</p>
+    <br>
+    <br>
+    <p class="text-3xl pl-12"> To Do</p>
+    <br>
+    <br>
+    <div style="display: flex; flex-direction: column; align-items: center; font-size:20px;">
+        <div class="task-container bg-white rounded-lg p-4 mb-4" style="width:80%;">
+            <p style="text-align:center;">Organise Books</p>
+        </div>
+        <div class="task-container bg-white rounded-lg p-4 mb-4" style="width:80%;">
+            <p style="text-align:center;">Finish UXD Checklist</p>
+        </div>
+        <div class="task-container bg-white rounded-lg p-4 mb-4" style="width:80%;">
+            <p style="text-align:center;">Create Survey for UI</p>
+        </div>
+        <div class="task-container bg-white rounded-lg p-5 mb-4" style="width:80%;">
+            <p style="text-align:center;">Wash Dishes</p>
+        </div>
+        <div class="task-container bg-white rounded-lg p-5 mb-4" style="width:80%;">
+            <p style="text-align:center;">Edit CLS Video</p>
+        </div>
     </div>
+
+
 
 
     <!-- Navigation Bar at the Bottom -->

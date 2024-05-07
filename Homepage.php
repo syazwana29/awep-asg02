@@ -18,8 +18,8 @@
     <p class="text-xl font-bold text-center">Home</p>
     <br>
     <div>
-        <p class="text-2xl font-bold">Welcome</p>
-        <p>We're here to assist you to explore educational journey</p>
+        <p class="text-2xl font-bold pl-4">Welcome</p>
+        <p class="pl-4">We're here to assist you to explore educational journey</p>
         <br>
         <br>
 
@@ -41,7 +41,7 @@
             </div>
         </div>
         <br>
-        <p class="text-xl font-bold"> Others</p>
+        <p class="text-xl font-bold pl-4"> Others</p>
         <br>
         <div class="container mx-auto">
             <div class="flex mx-auto justify-center space-x-4">
