@@ -32,6 +32,17 @@
         ?>
     </div>
     <script src="scripts.js">
+        function openBoard(day) {
+            // Hide all boards
+            var boards = document.getElementsByClassName("board");
+            for (var i = 0; i < boards.length; i++) {
+                boards[i].classList.remove("active");
+            }
+
+            // Show the selected board
+            var board = document.getElementById("board-" + day);
+            board.classList.add("active");
+        }
     </script>
 </body>
 
