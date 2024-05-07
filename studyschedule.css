@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px;
+    background-color: #f2f2f2;
+}
+
+.daysinweek{
+    display:flex;
+    justify-content:space-around;
+    padding:10px;
+    background-color: #ddd;
+}
+
+.day{
+    cursor:pointer;
+    padding:5px 10px;
+}
+
+#backbtn,
+#calendarbtn {
+    display: inline-block;
+    width: 30px;
+    height: 30px; 
+}
