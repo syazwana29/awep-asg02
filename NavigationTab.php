@@ -8,11 +8,28 @@
     <title>Navigation Tab</title>
 </head>
 
-<body class="bg-gradient-to-br from-purple-50 " style="background-color: #AA51C4;">
+<body style="background-color: rgba(170, 81, 196, 0.8);" class="h-screen relative">
     <!-- Your content here -->
+    <div>
+        <img src="./assets/Studysched.png" alt="study">
+        <p>Study Schedule</p>
+    </div>
+    <div>
+        <img src="./assets/timetracker.png" alt="time">
+        <p>Time Tracking</p>
+    </div>
+    <div>
+        <p>Home</p>
+    </div>
+    <div>
+        <p>Task Manager</p>
+    </div>
+    <div>
+        <p>Notes</p>
+    </div>
+    <div>
+        <p>Exam</p>
+    </div>
 </body>
-
-
-
 
 </html>
