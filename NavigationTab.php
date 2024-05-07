@@ -27,7 +27,7 @@
         <p>Task Manager</p>
     </div>
     <div>
-        <img src="./assets/.png" alt="note">
+
         <p>Notes</p>
     </div>
     <div>
