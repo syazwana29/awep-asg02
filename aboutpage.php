@@ -10,6 +10,7 @@
 </head>
 
 <body class="bg-gradient-to-b from-white to-blue-200 h-screen relative">
+    <p>test</p>
 
 
 
