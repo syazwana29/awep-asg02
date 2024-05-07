@@ -15,16 +15,19 @@
         <p>Study Schedule</p>
     </div>
     <div>
-        <img src="./assets/timetracker.png" alt="time">
+        <img src="./assets/alarm.png" alt="time">
         <p>Time Tracking</p>
     </div>
     <div>
+        <img src="./assets/smallLogo.png" alt="home">
         <p>Home</p>
     </div>
     <div>
+        <img src="./assets/task.png" alt="task">
         <p>Task Manager</p>
     </div>
     <div>
+        <img src="./assets/.png" alt="note">
         <p>Notes</p>
     </div>
     <div>
