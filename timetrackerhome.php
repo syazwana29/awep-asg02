@@ -14,10 +14,18 @@
     <!-- Move "23rd April" and "Hello!" to the right -->
     <h2 class="pl-10">23rd April</h2>
     <h1 class="pl-10"><b>Hello !</b></h1>
+    <div class="text-center mt-10 mb-4"> <!-- Adjusted margin-bottom -->
+        <!-- Container for both "Hello!" and "Pomodoro Technique" -->
+        <div>
+            <h2>The Pomodoro Technique is a time management method that boosts focus and productivity by breaking work into short, timed sessions.</h2>
+        </div>
+    </div>
 
-    <!-- Image in the Middle of the Screen -->
-    <div class="absolute inset-0 flex items-center justify-center">
-        <img src="assets/fifteen.png" alt="Fifteen" class="w-120 h-64">
+    <!-- Container for Images in the Middle of the Screen -->
+    <div class="flex flex-col items-center justify-center mt-4"> <!-- Added flexbox classes -->
+        <img src="assets/fifteenmins.png" alt="Fifteen Minutes" style="width: 375px; height: 71px; margin-left: 0px;"> <!-- Set width, height, and adjust left margin -->
+        <img src="assets/thirty.png" alt="Thirty Minutes" style="width: 375px; height: 71px; margin-left: 0px;"> <!-- Set width, height, and adjust left margin -->
+        <img src="assets/fortyfive.png" alt="Forty-Five Minutes" style="width: 375px; height: 71px; margin-left: 0px;"> <!-- Set width, height, and adjust left margin -->
     </div>
 
     <!-- Navigation Bar at the Bottom -->
