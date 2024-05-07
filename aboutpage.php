@@ -1,3 +1,7 @@
+<?php
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,12 +10,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Include Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <title>Log in Page</title>
+    <title>About Page</title>
 </head>
 
 <body class="bg-gradient-to-b from-white to-blue-200 h-screen relative">
-    <p>test</p>
-
 
 
     <!-- Navigation Bar at the Bottom -->
