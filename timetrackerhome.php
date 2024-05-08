@@ -29,8 +29,13 @@
     </div>
 
     <!-- Start Studying image positioned more to the right -->
-    <div class="flex justify-end pr-0"> <!-- Adjusted pr-20 for more right padding -->
+    <div class="flex justify-end pr-0 relative"> <!-- Adjusted pr-20 for more right padding -->
         <img src="assets/startstudying.png" alt="Start Studying" style="width: 190px; height: 60px;"> <!-- Set width and height -->
+    </div>
+
+    <!-- Time Recorded image positioned below Start Studying -->
+    <div class="flex flex-col items-center justify-center mt-4"> <!-- Add flexbox classes to center vertically and horizontally -->
+        <img src="assets/studytime.png" alt="Study Time" class="mx-auto"> <!-- Add mx-auto class to center horizontally -->
     </div>
 
     <!-- Navigation Bar at the Bottom -->
