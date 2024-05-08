@@ -37,7 +37,7 @@
             <button class="task-container bg-white rounded-lg p-4 mb-4" style="width:80%;" onclick="handleButtonClick(this, 'Edit CLS Video')">
                 Edit CLS Video
             </button>
-            <!-- ... other buttons ... -->
+
     </div>
     <p id="doneTitle" class="text-3xl pl-12" style="display: none;"> Done</p>
     <br>
