@@ -210,6 +210,11 @@
 
         </ul>
     </div>
+
+    <div class="fixed bottom-0 left-0 w-full bg-yellow-300 px-4 py-2 z-10 flex justify-center"> <!-- Adjusted padding -->
+        <div style="border-radius: 9999px; border: 4px solid white; padding: 5px;"> <!-- Adjusted border-width -->
+            <img src="assets/Studysched.png" alt="study schedule" style="height: 50px; width: 50px; object-fit: cover;"> <!-- Adjusted height -->
+        </div>
 </body>
 
 </html>
