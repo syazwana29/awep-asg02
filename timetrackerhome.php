@@ -25,7 +25,7 @@
 
 <body class="bg-gradient-to-b from-white to-blue-200 h-screen relative">
     <div class="flex justify-between items-center px-4 py-2"> <!-- Added flexbox classes -->
-        <img src="assets/left-arrow.png" alt="Left Arrow" style="height: 20px;"> <!-- Adjusted height -->
+        <img src=" ./assets/left-arrow.png" alt="backarrow" class="h-10 w-10" onclick="window.history.back();">
         <h1 class="text-center"><b>Time Tracker</b></h1> <!-- Centered heading -->
         <div></div> <!-- Empty div to maintain space -->
     </div>

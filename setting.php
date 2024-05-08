@@ -12,5 +12,6 @@
 <body class="bg-gradient-to-b from-white to-blue-200 h-screen relative flex flex-col">
 
 </body>
+<img src=" ./assets/left-arrow.png" alt="backarrow" class="h-10 w-10" onclick="window.history.back();">
 
 </html>

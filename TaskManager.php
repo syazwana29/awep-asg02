@@ -13,7 +13,7 @@
 </head>
 
 <body class="bg-gradient-to-b from-white to-blue-200 h-screen relative">
-    <img src=" ./assets/left-arrow.png" alt="backarrow" class="h-10 w-10">
+    <img src=" ./assets/left-arrow.png" alt="backarrow" class="h-10 w-10" onclick="window.history.back();">
     <p class="text-xl font-bold text-center">Task Manager</p>
     <br>
     <br>

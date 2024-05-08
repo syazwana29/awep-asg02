@@ -12,7 +12,7 @@
 
 <body class="bg-purple-200">
   <div>
-    <button class="mt-6 ml-4 text-5xl" a href="notes.php">&lt;</button>
+    <img src=" ./assets/left-arrow.png" alt="backarrow" class="h-10 w-10" onclick="window.history.back();">
     <h1 class="text-2xl absolute font-bold ml-36">Notes</h1>
   </div>
   <h1 class="underline text-4xl mt-20 ml-6">Data Challenges</h1>

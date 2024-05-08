@@ -10,6 +10,7 @@
 
 <body style="background-color: rgba(170, 81, 196, 0.8);" class="h-screen relative">
     <!-- onclick="window.history.back();"    -->
+    <img src=" ./assets/left-arrow.png" alt="backarrow" class="h-10 w-10" onclick="window.history.back();">
     <br>
     <br>
     <br>

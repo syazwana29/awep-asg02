@@ -12,7 +12,7 @@
 
 <body class="bg-blue-100">
   <div>
-    <button class="mt-6 ml-4 text-5xl" a href="Homepage.php">&lt;</button>
+    <img src=" ./assets/left-arrow.png" alt="backarrow" class="h-10 w-10" onclick="window.history.back();">
     <h1 class="text-2xl absolute font-semibold ml-36">Notes</h1>
   </div>
 
