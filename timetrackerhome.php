@@ -10,7 +10,12 @@
 </head>
 
 <body class="bg-gradient-to-b from-white to-blue-200 h-screen relative">
-    <h1 style="text-align: center; margin-top: 20px;"><b>Time Tracker</b></h1>
+    <div class="flex justify-between items-center px-4 py-2"> <!-- Added flexbox classes -->
+        <img src="assets/left-arrow.png" alt="Left Arrow" style="height: 20px;"> <!-- Adjusted height -->
+        <h1 class="text-center"><b>Time Tracker</b></h1> <!-- Centered heading -->
+        <div></div> <!-- Empty div to maintain space -->
+    </div>
+
     <!-- Move "23rd April" and "Hello!" to the right -->
     <h2 class="pl-10">23rd April</h2>
     <h1 class="pl-10"><b>Hello !</b></h1>
@@ -29,15 +34,20 @@
     </div>
 
     <!-- Start Studying image positioned more to the right -->
-    <div class="flex justify-end pr-0"> <!-- Adjusted pr-20 for more right padding -->
+    <div class="flex justify-end pr-0 relative"> <!-- Adjusted pr-20 for more right padding -->
         <img src="assets/startstudying.png" alt="Start Studying" style="width: 190px; height: 60px;"> <!-- Set width and height -->
     </div>
 
-    <!-- Navigation Bar at the Bottom -->
-    <div class="fixed bottom-0 left-0 w-full bg-yellow-300 p-10 z-10">
-        <ul class="flex justify-center">
+    <!-- Time Recorded image positioned below Start Studying -->
+    <div class="flex flex-col items-center justify-center mt-4"> <!-- Add flexbox classes to center vertically and horizontally -->
+        <img src="assets/studytime.png" alt="Study Time" class="mx-auto"> <!-- Add mx-auto class to center horizontally -->
+    </div>
 
-        </ul>
+    <!-- Navigation Bar at the Bottom -->
+    <div class="fixed bottom-0 left-0 w-full bg-yellow-300 px-4 py-2 z-10 flex justify-center"> <!-- Adjusted padding -->
+        <div style="border-radius: 9999px; border: 4px solid white; padding: 5px;"> <!-- Adjusted border-width -->
+            <img src="assets/timetracker.png" alt="Time Tracker" style="height: 60px;"> <!-- Adjusted height -->
+        </div>
     </div>
 </body>
 
