@@ -10,7 +10,12 @@
 </head>
 
 <body class="bg-gradient-to-b from-white to-blue-200 h-screen relative">
-    <h1 style="text-align: center; margin-top: 20px;"><b>Time Tracker</b></h1>
+    <div class="flex justify-between items-center px-4 py-2"> <!-- Added flexbox classes -->
+        <img src="assets/left-arrow.png" alt="Left Arrow" style="height: 20px;"> <!-- Adjusted height -->
+        <h1 class="text-center"><b>Time Tracker</b></h1> <!-- Centered heading -->
+        <div></div> <!-- Empty div to maintain space -->
+    </div>
+
     <!-- Move "23rd April" and "Hello!" to the right -->
     <h2 class="pl-10">23rd April</h2>
     <h1 class="pl-10"><b>Hello !</b></h1>
