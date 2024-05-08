@@ -45,6 +45,7 @@
     <div id="doneList" style="display: flex; flex-direction: column; align-items: center; font-size:20px;"></div>
     <!-- Navigation Bar at the Bottom -->
     <div class="fixed bottom-0 left-0 w-full bg-yellow-300 p-10 z-10">
+        <img src="./assets/task.png" alt="" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);">
         <ul class="flex justify-center">
 
         </ul>
@@ -66,6 +67,7 @@
 
                 // Check if there are any buttons left in the task list
                 if (taskList.getElementsByTagName('button').length === 0) {
+
                     // If there are no buttons left, hide the "To Do" paragraph
                     const todoTitle = document.getElementById('todoTitle');
                     todoTitle.style.display = 'none';

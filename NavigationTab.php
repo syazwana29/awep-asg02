@@ -14,11 +14,11 @@
     <br>
     <br>
     <div style="display: flex; justify-content: center; gap: 20px;">
-        <div class="bg-white rounded-lg p-4" style="display: flex; flex-direction: column; align-items: center;">
+        <div class="bg-white rounded-lg p-5" style="display: flex; flex-direction: column; align-items: center;">
             <img src="./assets/Studysched.png" alt="study">
             <p>Study Schedule</p>
         </div>
-        <div class="bg-white rounded-lg p-4" style="display: flex; flex-direction: column; align-items: center;">
+        <div class="bg-white rounded-lg p-5" style="display: flex; flex-direction: column; align-items: center;">
             <img src="./assets/alarm.png" alt="time">
             <p>Time Tracking</p>
         </div>
@@ -40,11 +40,11 @@
     <br>
     <br>
     <div style="display: flex; justify-content: center; gap: 20px;">
-        <div class="bg-white rounded-lg p-6" style="display: flex; flex-direction: column; align-items: center;">
+        <div class="bg-white rounded-lg p-7" style="display: flex; flex-direction: column; align-items: center;">
             <img src="./assets/notes.png" alt="note">
             <p>Notes</p>
         </div>
-        <div class="bg-white rounded-lg p-6" style="display: flex; flex-direction: column; align-items: center;">
+        <div class="bg-white rounded-lg p-7" style="display: flex; flex-direction: column; align-items: center;">
             <img src="./assets/exam.png" alt="exam">
             <p>Exam</p>
         </div>
