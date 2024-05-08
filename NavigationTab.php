@@ -8,7 +8,7 @@
     <title>Navigation Tab</title>
 </head>
 
-<body style="background-color: rgba(170, 81, 196, 0.8);" class="h-screen relative">
+<body style="background-color: rgba(170, 81, 196, 0.8);" class="h-screen relative" onclick="window.history.back();">
     <br>
     <br>
     <br>
