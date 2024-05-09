@@ -6,30 +6,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $password = $_POST["password"];
 
   $servername = "localhost";
-  $db_username = "your_username";
-  $db_password = "your_password";
-  $dbname = "your_database_name";
+  $db_username = "22FTTXXXX";
+  $db_password = "awep_asg02";
+  $dbname = "aweproject";
 
-  $conn = new mysqli($servername, $db_username, $db_password, $dbname);
+  $login = new mysqli($servername, $db_username, $db_password, $dbname);
 
-  if ($conn->connect_error) {
+  if ($login->connect_error) {
     die("Connection failed: " . $conn->connect_error);
   }
 
   $sql = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";
-  $result = $conn->query($sql);
+  $result = $login->query($sql);
 
   if ($result->num_rows == 1) {
-    // Authentication successful
     $_SESSION["authenticated"] = true;
-    header("Location: mainEvent.php");
+    header("Location: Homepage.php");
     exit();
   } else {
-    // Authentication failed
     $error_message = "Invalid username or password. Please try again.";
   }
 
-  $conn->close();
+  $login->close();
 }
 ?>
 <!DOCTYPE html>
