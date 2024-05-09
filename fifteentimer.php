@@ -67,27 +67,33 @@
             transform: translateX(-50%);
             /* Center horizontally */
         }
+
+        /* Center the buttons */
+        .button-container {
+            display: flex;
+            justify-content: center;
+        }
     </style>
 </head>
 
 <body class="bg-gradient-to-b from-white to-blue-200 h-screen relative">
-    <div class="left-arrow">
+    <a href="timetrackerhome.php" class="left-arrow">
         <img src="./assets/left-arrow.png" alt="Left Arrow" class="h-10 w-10">
-    </div>
+    </a>
     <h1 class="text-center time-tracker-heading"><b>Time Tracker</b></h1> <!-- Adjusted class -->
 
     <div class="timer-container"> <!-- Adjusted container -->
         <div id="timer" class="text-6xl font-bold mb-8">15:00</div>
-        <div class="space-x-4 flex">
-            <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">Start</button>
-            <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">Pause</button>
-            <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">Stop</button>
+        <div class="space-x-4 flex button-container"> <!-- Adjusted container -->
+            <button class="bg-purple-400 hover:bg-purple-400 text-white font-bold py-2 px-4 rounded" onclick="startTimer()">Start</button>
+            <button class="bg-purple-400 hover:bg-purple-400 text-white font-bold py-2 px-4 rounded" onclick="pauseTimer()">Pause</button>
+            <button class="bg-purple-400 hover:bg-purple-400 text-white font-bold py-2 px-4 rounded" onclick="stopTimer()">Stop</button>
         </div>
     </div>
 
     <script>
         let timerInterval;
-        let totalSeconds = 900; // 15 minutes = 15 * 60 seconds
+        let totalSeconds = 900;
         let paused = false;
 
         function startTimer() {
@@ -123,9 +129,6 @@
                 totalSeconds--;
             }
         }
-
-        // Start the timer automatically when the page loads
-        window.onload = startTimer;
     </script>
 </body>
 
