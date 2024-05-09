@@ -2,7 +2,6 @@
 session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  // Get username and password from the form
   $username = $_POST["username"];
   $password = $_POST["password"];
 
