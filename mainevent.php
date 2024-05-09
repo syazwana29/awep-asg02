@@ -86,6 +86,7 @@
     </div>
 
     <!-- Calendar -->
+<<<<<<< HEAD
     <div class="container mx-auto px-4 py-6 sm:px-6 lg:px-8 bg-transparent calendar-container">
         <div class="bg-white rounded-lg shadow overflow-hidden">
 
@@ -260,6 +261,56 @@
                     </div>
                 </dl>
             </div>
+=======
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-4xl p-4">
+        <div class="grid grid-cols-7 gap-1">
+            <div class="text-center text-gray-500">Mon</div>
+            <div class="text-center text-gray-500">Tue</div>
+            <div class="text-center text-gray-500">Wed</div>
+            <div class="text-center text-gray-500">Thu</div>
+            <div class="text-center text-gray-500">Fri</div>
+            <div class="text-center text-gray-500">Sat</div>
+            <div class="text-center text-gray-500">Sun</div>
+            <!-- Days -->
+            <div class="text-center text-gray-500">29</div>
+            <div class="text-center text-gray-500">30</div>
+            <div class="text-center text-black">1</div>
+            <div class="text-center text-black">2</div>
+            <div class="text-center text-black">3</div>
+            <div class="text-center text-black">4</div>
+            <div class="text-center text-black">5</div>
+            <div class="text-center text-black">6</div>
+            <div class="text-center text-black">7</div>
+            <div class="text-center text-black">8</div>
+            <div class="text-center text-black">9</div>
+            <div class="text-center text-black">10</div>
+            <div class="text-center text-black">11</div>
+            <div class="text-center text-black">12</div>
+            <div class="text-center text-black">13</div>
+            <div class="text-center text-black">14</div>
+            <div class="text-center text-black">15</div>
+            <div class="text-center text-black">16</div>
+            <div class="text-center text-black">17</div>
+            <div class="text-center text-black">18</div>
+            <div class="text-center text-black">19</div>
+            <div class="text-center text-black">20</div>
+            <div class="text-center text-black">21</div>
+            <div class="text-center text-black">22</div>
+            <div class="text-center text-black">23</div>
+            <div class="text-center text-black">24</div>
+            <div class="text-center text-black">25</div>
+            <div class="text-center text-black">26</div>
+            <div class="text-center text-black">27</div>
+            <div class="text-center text-black">28</div>
+            <div class="text-center text-black">29</div>
+            <div class="text-center text-black">30</div>
+            <div class="text-center text-black">31</div>
+            <div class="text-center text-gray-500">1</div>
+            <div class="text-center text-gray-500">2</div>
+            <div class="text-center text-gray-500"></div>
+            <div class="text-center text-gray-500"></div>
+            <div class="text-center text-gray-500"></div>
+>>>>>>> 43d0a14c6eda7a56078cc98141d75aa2a928b5a7
         </div>
     </div>
 
