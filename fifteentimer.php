@@ -20,57 +20,115 @@
         .selected-option.clicked {
             filter: grayscale(0%) brightness(80%);
         }
+
+        /* Center and enlarge timer */
+        #timer {
+            font-size: 4rem;
+            /* Large font size */
+            text-align: center;
+            /* Center the text */
+            border-radius: 50%;
+            /* Make it a circle */
+            border: 4px solid black;
+            /* Add border */
+            width: 300px;
+            /* Adjust width to make the circle larger */
+            height: 300px;
+            /* Adjust height to make the circle larger */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Adjustments for positioning */
+        .timer-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Positioning for left arrow */
+        .left-arrow {
+            position: absolute;
+            top: 10px;
+            /* Adjust as needed */
+            left: 10px;
+            /* Adjust as needed */
+        }
+
+        /* Adjust position of the Time Tracker heading */
+        .time-tracker-heading {
+            position: absolute;
+            top: 20px;
+            /* Adjust to lower the heading */
+            left: 50%;
+            /* Center horizontally */
+            transform: translateX(-50%);
+            /* Center horizontally */
+        }
+
+        /* Center the buttons */
+        .button-container {
+            display: flex;
+            justify-content: center;
+        }
     </style>
 </head>
 
 <body class="bg-gradient-to-b from-white to-blue-200 h-screen relative">
-    <div class="flex justify-between items-center px-4 py-2"> <!-- Added flexbox classes -->
-        <img src="assets/left-arrow.png" alt="Left Arrow" style="height: 20px;"> <!-- Left arrow image retained -->
-        <h1 class="text-center flex-grow"><b>Time Tracker</b></h1> <!-- Time Tracker heading centered -->
-        <!-- Empty div removed -->
+    <a href="timetrackerhome.php" class="left-arrow">
+        <img src="./assets/left-arrow.png" alt="Left Arrow" class="h-10 w-10">
+    </a>
+    <h1 class="text-center time-tracker-heading"><b>Time Tracker</b></h1> <!-- Adjusted class -->
+
+    <div class="timer-container"> <!-- Adjusted container -->
+        <div id="timer" class="text-6xl font-bold mb-8">15:00</div>
+        <div class="space-x-4 flex button-container"> <!-- Adjusted container -->
+            <button class="bg-purple-400 hover:bg-purple-400 text-white font-bold py-2 px-4 rounded" onclick="startTimer()">Start</button>
+            <button class="bg-purple-400 hover:bg-purple-400 text-white font-bold py-2 px-4 rounded" onclick="pauseTimer()">Pause</button>
+            <button class="bg-purple-400 hover:bg-purple-400 text-white font-bold py-2 px-4 rounded" onclick="stopTimer()">Stop</button>
+        </div>
     </div>
-
-    <!-- Move "23rd April" and "Hello!" to the right removed -->
-    <!-- Text removed -->
-    <div class="text-center mt-10 mb-3"> <!-- Adjusted margin-bottom -->
-        <!-- Container for both "Hello!" and "Pomodoro Technique" removed -->
-    </div>
-
-    <!-- Container for Images in the Middle of the Screen removed -->
-
-    <!-- Start Studying image positioned more to the right removed -->
-
-    <!-- Time Recorded image positioned below Start Studying removed -->
-
-    <!-- Navigation Bar at the Bottom removed -->
-
-    <?php
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        if (isset($_POST['option'])) {
-            $option = $_POST['option'];
-            switch ($option) {
-                case 'fifteen':
-                    header("Location: fifteentimer.php");
-                    exit();
-                    break;
-                case 'thirty':
-                    header("Location: thirtytimer.php");
-                    exit();
-                    break;
-                case 'fortyfive':
-                    header("Location: fortyfivetimer.php");
-                    exit();
-                    break;
-                default:
-                    // Handle default case
-                    break;
-            }
-        }
-    }
-    ?>
 
     <script>
-        // JavaScript function to set the selected option value removed
+        let timerInterval;
+        let totalSeconds = 900;
+        let paused = false;
+
+        function startTimer() {
+            if (!paused) {
+                clearInterval(timerInterval);
+                timerInterval = setInterval(updateTimer, 1000);
+            }
+            paused = false;
+        }
+
+        function pauseTimer() {
+            clearInterval(timerInterval);
+            paused = true;
+        }
+
+        function stopTimer() {
+            clearInterval(timerInterval);
+            totalSeconds = 900;
+            paused = false;
+            updateTimer();
+        }
+
+        function updateTimer() {
+            const minutes = Math.floor(totalSeconds / 60);
+            let seconds = totalSeconds % 60;
+            seconds = seconds < 10 ? '0' + seconds : seconds;
+            document.getElementById('timer').textContent = `${minutes}:${seconds}`;
+
+            if (totalSeconds === 0) {
+                clearInterval(timerInterval);
+                alert('Timer finished!');
+            } else {
+                totalSeconds--;
+            }
+        }
     </script>
 </body>
 
