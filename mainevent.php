@@ -39,13 +39,8 @@
     </div>
 
     <!-- Calendar -->
-<<<<<<< HEAD
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-6 rounded-lg">
-        <div class="grid grid-cols-7 gap-4">
-=======
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-4xl p-4">
+    <div class="calendar-grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-4xl p-4">
         <div class="grid grid-cols-7 gap-1">
->>>>>>> 818780a2132d41a3d4a8913bf78d23306f2bfd4f
             <div class="text-center text-gray-500">Mon</div>
             <div class="text-center text-gray-500">Tue</div>
             <div class="text-center text-gray-500">Wed</div>
