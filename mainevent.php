@@ -23,180 +23,54 @@
     </div>
 
     <!-- Calendar -->
-    <div class="container mx-auto px-4 py-6 sm:px-6 lg:px-8 bg-transparent">
-        <div class="bg-white rounded-lg shadow overflow-hidden">
-
-            <div class="px-4 py-5 sm:p-0">
-                <dl class="sm:divide-y sm:divide-gray-200">
-                    <div class="px-4 py-5 grid grid-cols-7 gap-4">
-                        <dt class="text-sm font-medium text-gray-500">
-                            Sun
-                        </dt>
-                        <dt class="text-sm font-medium text-gray-500">
-                            Mon
-                        </dt>
-                        <dt class="text-sm font-medium text-gray-500">
-                            Tue
-                        </dt>
-                        <dt class="text-sm font-medium text-gray-500">
-                            Wed
-                        </dt>
-                        <dt class="text-sm font-medium text-gray-500">
-                            Thu
-                        </dt>
-                        <dt class="text-sm font-medium text-gray-500">
-                            Fri
-                        </dt>
-                        <dt class="text-sm font-medium text-gray-500">
-                            Sat
-                        </dt>
-                    </div>
-                    <!-- Week 1 -->
-                    <div class="px-4 py-5 sm:grid sm:grid-cols-7 sm:gap-4 sm:px-6">
-                        <dt class="text-sm font-medium text-gray-500">
-                            <!-- Empty for days before the 1st -->
-                        </dt>
-                        <dt class="text-sm font-medium text-gray-500">
-                            <!-- Empty for days before the 1st -->
-                        </dt>
-                        <dt class="text-sm font-medium text-gray-500">
-                            <!-- Empty for days before the 1st -->
-                        </dt>
-                        <dt class="text-sm font-medium text-gray-500">
-                            <!-- Empty for days before the 1st -->
-                        </dt>
-                        <dt class="text-sm font-medium text-gray-500">
-                            <!-- Empty for days before the 1st -->
-                        </dt>
-                        <dt class="text-sm font-medium text-gray-500">
-                            <!-- Empty for days before the 1st -->
-                        </dt>
-                        <dt class="text-sm font-medium text-gray-500">
-                            1
-                        </dt>
-                    </div>
-                    <!-- Week 2 -->
-                    <div class="px-4 py-5 sm:grid sm:grid-cols-7 sm:gap-4 sm:px-6">
-                        <dt class="text-sm font-medium text-gray-500">
-                            2
-                        </dt>
-                        <dt class="text-sm font-medium text-gray-500">
-                            3
-                        </dt>
-                        <dt class="text-sm font-medium text-gray-500">
-                            4
-                        </dt>
-                        <dt class="text-sm font-medium text-gray-500">
-                            5
-                        </dt>
-                        <dt class="text-sm font-medium text-gray-500">
-                            6
-                        </dt>
-                        <dt class="text-sm font-medium text-gray-500">
-                            7
-                        </dt>
-                        <dt class="text-sm font-medium text-gray-500">
-                            8
-                        </dt>
-                    </div>
-                    <!-- Week 3 -->
-                    <div class="px-4 py-5 sm:grid sm:grid-cols-7 sm:gap-4 sm:px-6">
-                        <dt class="text-sm font-medium text-gray-500">
-                            9
-                        </dt>
-                        <dt class="text-sm font-medium text-gray-500">
-                            10
-                        </dt>
-                        <dt class="text-sm font-medium text-gray-500">
-                            11
-                        </dt>
-                        <dt class="text-sm font-medium text-gray-500">
-                            12
-                        </dt>
-                        <dt class="text-sm font-medium text-gray-500">
-                            13
-                        </dt>
-                        <dt class="text-sm font-medium text-gray-500">
-                            14
-                        </dt>
-                        <dt class="text-sm font-medium text-gray-500">
-                            15
-                        </dt>
-                    </div>
-                    <!-- Week 4 -->
-                    <div class="px-4 py-5 sm:grid sm:grid-cols-7 sm:gap-4 sm:px-6">
-                        <dt class="text-sm font-medium text-gray-500">
-                            16
-                        </dt>
-                        <dt class="text-sm font-medium text-gray-500">
-                            17
-                        </dt>
-                        <dt class="text-sm font-medium text-gray-500">
-                            18
-                        </dt>
-                        <dt class="text-sm font-medium text-gray-500">
-                            19
-                        </dt>
-                        <dt class="text-sm font-medium text-gray-500">
-                            20
-                        </dt>
-                        <dt class="text-sm font-medium text-gray-500">
-                            21
-                        </dt>
-                        <dt class="text-sm font-medium text-gray-500">
-                            22
-                        </dt>
-                    </div>
-                    <!-- Week 5 -->
-                    <div class="px-4 py-5 sm:grid sm:grid-cols-7 sm:gap-4 sm:px-6">
-                        <dt class="text-sm font-medium text-gray-500">
-                            23
-                        </dt>
-                        <dt class="text-sm font-medium text-gray-500">
-                            24
-                        </dt>
-                        <dt class="text-sm font-medium text-gray-500">
-                            25
-                        </dt>
-                        <dt class="text-sm font-medium text-gray-500">
-                            26
-                        </dt>
-                        <dt class="text-sm font-medium text-gray-500">
-                            27
-                        </dt>
-                        <dt class="text-sm font-medium text-gray-500">
-                            28
-                        </dt>
-                        <dt class="text-sm font-medium text-gray-500">
-                            29
-                        </dt>
-                    </div>
-                    <!-- Week 6 -->
-                    <div class="px-4 py-5 sm:grid sm:grid-cols-7 sm:gap-4 sm:px-6">
-                        <dt class="text-sm font-medium text-gray-500">
-                            30
-                        </dt>
-                        <dt class="text-sm font-medium text-gray-500">
-                            31
-                        </dt>
-                        <dt class="text-sm font-medium text-gray-500">
-                            <!-- Empty for days after the 31st -->
-                        </dt>
-                        <dt class="text-sm font-medium text-gray-500">
-                            <!-- Empty for days after the 31st -->
-                        </dt>
-                        <dt class="text-sm font-medium text-gray-500">
-                            <!-- Empty for days after the 31st -->
-                        </dt>
-                        <dt class="text-sm font-medium text-gray-500">
-                            <!-- Empty for days after the 31st -->
-                        </dt>
-                        <dt class="text-sm font-medium text-gray-500">
-                            <!-- Empty for days after the 31st -->
-                        </dt>
-                    </div>
-                </dl>
-            </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-4xl p-4">
+        <div class="grid grid-cols-7 gap-1">
+            <div class="text-center text-gray-500">Mon</div>
+            <div class="text-center text-gray-500">Tue</div>
+            <div class="text-center text-gray-500">Wed</div>
+            <div class="text-center text-gray-500">Thu</div>
+            <div class="text-center text-gray-500">Fri</div>
+            <div class="text-center text-gray-500">Sat</div>
+            <div class="text-center text-gray-500">Sun</div>
+            <!-- Days -->
+            <div class="text-center text-gray-500">29</div>
+            <div class="text-center text-gray-500">30</div>
+            <div class="text-center text-black">1</div>
+            <div class="text-center text-black">2</div>
+            <div class="text-center text-black">3</div>
+            <div class="text-center text-black">4</div>
+            <div class="text-center text-black">5</div>
+            <div class="text-center text-black">6</div>
+            <div class="text-center text-black">7</div>
+            <div class="text-center text-black">8</div>
+            <div class="text-center text-black">9</div>
+            <div class="text-center text-black">10</div>
+            <div class="text-center text-black">11</div>
+            <div class="text-center text-black">12</div>
+            <div class="text-center text-black">13</div>
+            <div class="text-center text-black">14</div>
+            <div class="text-center text-black">15</div>
+            <div class="text-center text-black">16</div>
+            <div class="text-center text-black">17</div>
+            <div class="text-center text-black">18</div>
+            <div class="text-center text-black">19</div>
+            <div class="text-center text-black">20</div>
+            <div class="text-center text-black">21</div>
+            <div class="text-center text-black">22</div>
+            <div class="text-center text-black">23</div>
+            <div class="text-center text-black">24</div>
+            <div class="text-center text-black">25</div>
+            <div class="text-center text-black">26</div>
+            <div class="text-center text-black">27</div>
+            <div class="text-center text-black">28</div>
+            <div class="text-center text-black">29</div>
+            <div class="text-center text-black">30</div>
+            <div class="text-center text-black">31</div>
+            <div class="text-center text-gray-500">1</div>
+            <div class="text-center text-gray-500">2</div>
+            <div class="text-center text-gray-500"></div>
+            <div class="text-center text-gray-500"></div>
+            <div class="text-center text-gray-500"></div>
         </div>
     </div>
 
