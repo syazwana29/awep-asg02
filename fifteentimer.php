@@ -77,9 +77,9 @@
 </head>
 
 <body class="bg-gradient-to-b from-white to-blue-200 h-screen relative">
-    <div class="left-arrow">
+    <a href="timetrackerhome.php" class="left-arrow">
         <img src="./assets/left-arrow.png" alt="Left Arrow" class="h-10 w-10">
-    </div>
+    </a>
     <h1 class="text-center time-tracker-heading"><b>Time Tracker</b></h1> <!-- Adjusted class -->
 
     <div class="timer-container"> <!-- Adjusted container -->
@@ -93,7 +93,7 @@
 
     <script>
         let timerInterval;
-        let totalSeconds = 900; // 15 minutes = 15 * 60 seconds
+        let totalSeconds = 900;
         let paused = false;
 
         function startTimer() {
