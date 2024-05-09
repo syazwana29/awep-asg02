@@ -2,20 +2,35 @@
 session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  // Get username and password from the form
   $username = $_POST["username"];
   $password = $_POST["password"];
 
-  $valid_username = "22FTT1503";
-  $valid_password = "password123";
+  $servername = "localhost";
+  $db_username = "your_username";
+  $db_password = "your_password";
+  $dbname = "your_database_name";
 
-  if ($username === $valid_username && $password === $valid_password) {
+  $conn = new mysqli($servername, $db_username, $db_password, $dbname);
+
+  if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+  }
+
+  $sql = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";
+  $result = $conn->query($sql);
+
+  if ($result->num_rows == 1) {
+    // Authentication successful
     $_SESSION["authenticated"] = true;
-
     header("Location: mainEvent.php");
     exit();
   } else {
+    // Authentication failed
     $error_message = "Invalid username or password. Please try again.";
   }
+
+  $conn->close();
 }
 ?>
 <!DOCTYPE html>
@@ -37,13 +52,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   </div>
 
   <div class="mt-36 ml-10">
-    <p class="text-sm font-medium mb-1">Username</p>
-    <input type="email"></input>
+    <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+      <p class="text-sm font-medium mb-1">Username</p>
+      <input type="text" name="username" required>
 
-    <p class="text-sm font-medium mt-2 mb-1">Password</p>
-    <input type="password"></input>
-    <br>
-    <button class="mt-10 ml-20 text-2xl">Login</button>
+      <p class="text-sm font-medium mt-2 mb-1">Password</p>
+      <input type="password" name="password" required>
+      <br>
+      <button type="submit" class="mt-10 ml-20 text-2xl">Login</button>
+    </form>
   </div>
 </body>
 
