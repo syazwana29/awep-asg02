@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body class="bg-blue-100">
 
   <div>
-    <img src="aweplogo.png" class="w-32 h-32 mb-0 mt-16">
+    <img src="assets/LOGO.png" class="w-32 h-32 mb-0 mt-16">
     <h1 class="text-purple-900 ml-8 text-2xl font-bold">Welcome</h1>
     <p class="text-purple-900 ml-8 text-xl">Log In to continue</p>
   </div>
