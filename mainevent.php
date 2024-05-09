@@ -7,14 +7,77 @@
     <!-- Include Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <title>Main Event Page</title>
+
+    <style>
+        /* Add media queries to make the layout responsive */
+        @media (max-width: 640px) {
+            .sm-only {
+                display: block;
+            }
+
+            .md-and-up {
+                display: none;
+            }
+
+            .calendar-container {
+                grid-template-columns: repeat(1, minmax(0, 1fr));
+            }
+
+            .calendar-week-header {
+                grid-template-columns: repeat(1, minmax(0, 1fr));
+            }
+
+            .calendar-day {
+                grid-template-columns: repeat(1, minmax(0, 1fr));
+            }
+
+            .calendar-day-number {
+                font-size: 1rem;
+            }
+
+            .calendar-day-content {
+                padding: 0.5rem;
+            }
+        }
+
+        @media (min-width: 641px) {
+            .md-and-up {
+                display: block;
+            }
+
+            .sm-only {
+                display: none;
+            }
+
+            .calendar-container {
+                grid-template-columns: repeat(7, minmax(0, 1fr));
+            }
+
+            .calendar-week-header {
+                grid-template-columns: repeat(7, minmax(0, 1fr));
+            }
+
+            .calendar-day {
+                grid-template-columns: repeat(7, minmax(0, 1fr));
+            }
+
+            .calendar-day-number {
+                font-size: 1.5rem;
+            }
+
+            .calendar-day-content {
+                padding: 1rem;
+            }
+        }
+    </style>
 </head>
 
 <body class="bg-gradient-to-b from-white to-blue-200 min-h-screen relative">
 
     <div class="flex justify-between items-center px-4 sm:px-6 lg:px-8">
-        <img src="./assets/left-arrow.png" alt="filter" class="w-10 h-10">
+        <img src="./assets/left-arrow.png" alt="filter" class="w-10 h-10 sm-only">
 
-        <img src="./assets/smallLogo.png" alt="logo" class="w-14 h-14">
+        <img src="./assets/smallLogo.png" alt="logo" class="w-14 h-14 md-and-up">
     </div>
 
     <div class="px-4 sm:px-6 lg:px-8">
@@ -23,12 +86,12 @@
     </div>
 
     <!-- Calendar -->
-    <div class="container mx-auto px-4 py-6 sm:px-6 lg:px-8 bg-transparent">
+    <div class="container mx-auto px-4 py-6 sm:px-6 lg:px-8 bg-transparent calendar-container">
         <div class="bg-white rounded-lg shadow overflow-hidden">
 
             <div class="px-4 py-5 sm:p-0">
                 <dl class="sm:divide-y sm:divide-gray-200">
-                    <div class="px-4 py-5 grid grid-cols-7 gap-4">
+                    <div class="px-4 py-5 grid grid-cols-7 gap-4 calendar-week-header">
                         <dt class="text-sm font-medium text-gray-500">
                             Sun
                         </dt>
@@ -52,7 +115,7 @@
                         </dt>
                     </div>
                     <!-- Week 1 -->
-                    <div class="px-4 py-5 sm:grid sm:grid-cols-7 sm:gap-4 sm:px-6">
+                    <div class="px-4 py-5 sm:grid sm:grid-cols-7 sm:gap-4 sm:px-6 calendar-day">
                         <dt class="text-sm font-medium text-gray-500">
                             <!-- Empty for days before the 1st -->
                         </dt>
