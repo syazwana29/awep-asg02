@@ -93,7 +93,7 @@
 
     <script>
         let timerInterval;
-        let totalSeconds = 900; // 15 minutes = 15 * 60 seconds
+        let totalSeconds = 900;
         let paused = false;
 
         function startTimer() {
