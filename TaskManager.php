@@ -13,7 +13,7 @@
 </head>
 
 <body class="bg-gradient-to-b from-white to-blue-200 h-screen relative">
-    <img src="./assets/left-arrow.png" alt="backarrow" class="h-10 w-10">
+    <img src=" ./assets/left-arrow.png" alt="backarrow" class="h-10 w-10" onclick="window.history.back();">
     <p class="text-xl font-bold text-center">Task Manager</p>
     <br>
     <br>
@@ -44,48 +44,47 @@
 
     <div id="doneList" style="display: flex; flex-direction: column; align-items: center; font-size:20px;"></div>
     <!-- Navigation Bar at the Bottom -->
-    <div class="fixed bottom-0 left-0 w-full bg-yellow-300 p-10 z-10">
-        <img src="./assets/task.png" alt="" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);">
-        <ul class="flex justify-center">
+    <div class="fixed bottom-0 left-0 w-full bg-yellow-300 px-4 py-2 z-10 flex justify-center"> <!-- Adjusted padding -->
+        <div style="border-radius: 9999px; border: 4px solid white; padding: 5px;" onclick="window.location.href='NavigationTab.php'"> <!-- Adjusted border-width -->
+            <img src="./assets/task.png" alt="task" style="height: 40px;"> <!-- Adjusted height -->
+        </div>
 
-        </ul>
-    </div>
 
-    <script>
-        function handleButtonClick(button, taskName) {
-            const doneList = document.getElementById('doneList');
-            const taskList = document.getElementById('taskList');
+        <script>
+            function handleButtonClick(button, taskName) {
+                const doneList = document.getElementById('doneList');
+                const taskList = document.getElementById('taskList');
 
-            if (button.parentNode === taskList) {
-                // The button is in the "To Do" list, so move it to the "Done" list
-                button.style.backgroundColor = 'rgba(255, 0, 0, 0.6)';
-                doneList.appendChild(button);
+                if (button.parentNode === taskList) {
+                    // The button is in the "To Do" list, so move it to the "Done" list
+                    button.style.backgroundColor = 'rgba(255, 0, 0, 0.6)';
+                    doneList.appendChild(button);
 
-                // Show the "Done" paragraph
-                const doneTitle = document.getElementById('doneTitle');
-                doneTitle.style.display = 'block';
-
-                // Check if there are any buttons left in the task list
-                if (taskList.getElementsByTagName('button').length === 0) {
-
-                    // If there are no buttons left, hide the "To Do" paragraph
-                    const todoTitle = document.getElementById('todoTitle');
-                    todoTitle.style.display = 'none';
-                }
-            } else {
-                // The button is in the "Done" list, so move it back to the "To Do" list
-                button.style.backgroundColor = 'white';
-                taskList.appendChild(button);
-
-                // Check if there are any buttons left in the done list
-                if (doneList.getElementsByTagName('button').length === 0) {
-                    // If there are no buttons left, hide the "Done" paragraph
+                    // Show the "Done" paragraph
                     const doneTitle = document.getElementById('doneTitle');
-                    doneTitle.style.display = 'none';
+                    doneTitle.style.display = 'block';
+
+                    // Check if there are any buttons left in the task list
+                    if (taskList.getElementsByTagName('button').length === 0) {
+
+                        // If there are no buttons left, hide the "To Do" paragraph
+                        const todoTitle = document.getElementById('todoTitle');
+                        todoTitle.style.display = 'none';
+                    }
+                } else {
+                    // The button is in the "Done" list, so move it back to the "To Do" list
+                    button.style.backgroundColor = 'white';
+                    taskList.appendChild(button);
+
+                    // Check if there are any buttons left in the done list
+                    if (doneList.getElementsByTagName('button').length === 0) {
+                        // If there are no buttons left, hide the "Done" paragraph
+                        const doneTitle = document.getElementById('doneTitle');
+                        doneTitle.style.display = 'none';
+                    }
                 }
             }
-        }
-    </script>
+        </script>
 
 </body>
 

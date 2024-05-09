@@ -11,7 +11,8 @@
 
 <body class="h-screen relative">
     <header>
-        <img src="assets/left-arrow.png" alt="backbtn" href="<?php echo $_SERVER['HTTP_REFERER']; ?>">
+        <img src=" ./assets/left-arrow.png" alt="backarrow" class="h-10 w-10" onclick="window.history.back();">
+        <!-- <img src="assets/left-arrow.png" alt="backbtn" href="<?php echo $_SERVER['HTTP_REFERER']; ?>"> -->
         <h1>Study Schedule</h1>
         <img src="assets/Studysched.png" alt="calendar" href="mainevent.php">
     </header>

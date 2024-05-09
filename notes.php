@@ -12,7 +12,7 @@
 
 <body class="bg-blue-100">
   <div>
-    <button class="mt-6 ml-4 text-5xl" a href="Homepage.php">&lt;</button>
+    <img src=" ./assets/left-arrow.png" alt="backarrow" class="h-10 w-10" onclick="window.history.back();">
     <h1 class="text-2xl absolute font-semibold ml-36">Notes</h1>
   </div>
 
@@ -51,4 +51,9 @@
         <a href="realLife.php" class="text-blue-500">Learn More</a>
       </div>
     </div>
+
+    <div class="fixed bottom-0 left-0 w-full bg-yellow-300 px-4 py-2 z-10 flex justify-center"> <!-- Adjusted padding -->
+      <div style="border-radius: 9999px; border: 4px solid white; padding: 5px;" onclick="window.location.href='NavigationTab.php'"> <!-- Adjusted border-width -->
+        <img src="./assets/notes.png" alt="task" style="height: 40px;"> <!-- Adjusted height -->
+      </div>
 </body>
