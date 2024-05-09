@@ -26,14 +26,12 @@
             z-index: -1;
         }
 
-        /* Center the logo */
         .logo {
             position: absolute;
             top: 10vh;
             left: 50%;
             transform: translateX(-50%);
             z-index: 1;
-            /* Set a higher z-index to overlay */
         }
 
         .arrow {
