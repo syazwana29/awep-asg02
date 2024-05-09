@@ -25,7 +25,7 @@
 
 <body class="bg-gradient-to-b from-white to-blue-200 h-screen relative">
     <div class="flex justify-between items-center px-4 py-2"> <!-- Added flexbox classes -->
-        <img src="assets/left-arrow.png" alt="Left Arrow" style="height: 20px;"> <!-- Adjusted height -->
+        <img src=" ./assets/left-arrow.png" alt="backarrow" class="h-10 w-10" onclick="window.history.back();">
         <h1 class="text-center"><b>Time Tracker</b></h1> <!-- Centered heading -->
         <div></div> <!-- Empty div to maintain space -->
     </div>
@@ -62,7 +62,7 @@
 
     <!-- Navigation Bar at the Bottom -->
     <div class="fixed bottom-0 left-0 w-full bg-yellow-300 px-4 py-2 z-10 flex justify-center"> <!-- Adjusted padding -->
-        <div style="border-radius: 9999px; border: 4px solid white; padding: 5px;"> <!-- Adjusted border-width -->
+        <div style="border-radius: 9999px; border: 4px solid white; padding: 5px;" onclick="window.location.href='NavigationTab.php'"> <!-- Adjusted border-width -->
             <img src="assets/timetracker.png" alt="Time Tracker" style="height: 60px;"> <!-- Adjusted height -->
         </div>
     </div>

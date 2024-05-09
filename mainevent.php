@@ -12,7 +12,7 @@
 <body class="bg-gradient-to-b from-white to-blue-200 h-screen relative">
 
     <div class="flex justify-between items-center px-4 sm:px-6 lg:px-8">
-        <img src="./assets/left-arrow.png" alt="filter" class="w-10 h-10">
+        <img src=" ./assets/left-arrow.png" alt="backarrow" class="h-10 w-10" onclick="window.history.back();">
 
         <img src="./assets/smallLogo.png" alt="logo" class="w-14 h-14">
     </div>

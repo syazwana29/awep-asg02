@@ -14,6 +14,7 @@
 </head>
 
 <body class="bg-gradient-to-b from-white to-blue-200 h-screen relative">
+    <img src=" ./assets/left-arrow.png" alt="backarrow" class="h-10 w-10" onclick="window.history.back();">
     <h1>about page</h1>
 
     <p>
