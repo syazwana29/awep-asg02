@@ -14,13 +14,18 @@
             .sm-only {
                 display: block;
             }
+        }
 
-            @media (min-width: 641px) {
-
-                .sm-only {
-                    display: none;
-                }
+        @media (min-width: 641px) {
+            .sm-only {
+                display: none;
             }
+        }
+
+        /* Add padding to each calendar cell */
+        .calendar-grid .text-center {
+            padding: 8px;
+            /* Adjust the padding size as needed */
         }
     </style>
 </head>
@@ -49,6 +54,7 @@
             <div class="text-center text-gray-500">Sat</div>
             <div class="text-center text-gray-500">Sun</div>
             <!-- Days -->
+            <!-- Add padding to each cell -->
             <div class="text-center text-gray-500">29</div>
             <div class="text-center text-gray-500">30</div>
             <div class="text-center text-black">1</div>
