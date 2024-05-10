@@ -15,58 +15,11 @@
                 display: block;
             }
 
-            .md-and-up {
-                display: none;
-            }
+            @media (min-width: 641px) {
 
-            .calendar-container {
-                grid-template-columns: repeat(1, minmax(0, 1fr));
-            }
-
-            .calendar-week-header {
-                grid-template-columns: repeat(1, minmax(0, 1fr));
-            }
-
-            .calendar-day {
-                grid-template-columns: repeat(1, minmax(0, 1fr));
-            }
-
-            .calendar-day-number {
-                font-size: 1rem;
-            }
-
-            .calendar-day-content {
-                padding: 0.5rem;
-            }
-        }
-
-        @media (min-width: 641px) {
-            .md-and-up {
-                display: block;
-            }
-
-            .sm-only {
-                display: none;
-            }
-
-            .calendar-container {
-                grid-template-columns: repeat(7, minmax(0, 1fr));
-            }
-
-            .calendar-week-header {
-                grid-template-columns: repeat(7, minmax(0, 1fr));
-            }
-
-            .calendar-day {
-                grid-template-columns: repeat(7, minmax(0, 1fr));
-            }
-
-            .calendar-day-number {
-                font-size: 1.5rem;
-            }
-
-            .calendar-day-content {
-                padding: 1rem;
+                .sm-only {
+                    display: none;
+                }
             }
         }
     </style>
@@ -77,7 +30,7 @@
     <div class="flex justify-between items-center px-4 sm:px-6 lg:px-8">
         <img src="./assets/left-arrow.png" alt="filter" class="w-10 h-10 sm-only" onclick="window.history.back();">
 
-        <img src="./assets/smallLogo.png" alt="logo" class="w-14 h-14 md-and-up">
+        <img src="./assets/smallLogo.png" alt="logo" class="fixed right-0 top-0 w-14 h-14">
     </div>
 
     <div class="px-4 sm:px-6 lg:px-8">
@@ -86,7 +39,7 @@
     </div>
 
     <!-- Calendar -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-4xl p-4">
+    <div class="calendar-grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-4xl p-4">
         <div class="grid grid-cols-7 gap-1">
             <div class="text-center text-gray-500">Mon</div>
             <div class="text-center text-gray-500">Tue</div>
