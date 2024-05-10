@@ -21,14 +21,14 @@
             top: 0;
             left: 0;
             width: 100%;
-            height: 40vh;
+            height: 50vh;
             background: radial-gradient(circle at center top, #4F1161 50%, transparent 50%);
             z-index: -1;
         }
 
         .logo-container {
             position: absolute;
-            top: 2vh;
+            top: 4vh;
             left: 50%;
             transform: translateX(-50%);
             text-align: center;
