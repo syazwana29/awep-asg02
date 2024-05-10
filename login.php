@@ -1,24 +1,6 @@
 <?php
 session_start();
 require 'db_connection.php';
-$username = $_POST['username'];
-$password = $_POST['password'];
-
-$sql = "SELECT * FROM users WHERE username = ? AND password = ?";
-$stmt = $pdo->prepare($sql);
-$stmt->execute([$username, $password]);
-$user = $stmt->fetch(PDO::FETCH_ASSOC);
-
-if ($user) {
-  $_SESSION['user'] = $user;
-  if ($_SESSION['user']['role'] == 'user') {
-    header('Location: Homepage.php');
-  } else {
-    header('Location: Homepage.php');
-  }
-} else {
-  echo "Invalid username or password";
-}
 
 $errors = [];
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -31,13 +13,25 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   if (empty($password)) {
     $errors[] = "Password is required";
   } elseif (strlen($password) < 8) {
-    $errors[] = "Password must be at least 8 characters long";
+    $errors[] = "Password must be at least 8 characters";
   }
-  if (empty($errors)) {
-    $stmt = $pdo->prepare("INSERT INTO users (username, password) VALUES (?, ?)");
+
+  if (!$errors) {
+    $sql = "SELECT * FROM users WHERE username = ? AND password = ?";
+    $stmt = $pdo->prepare($sql);
     $stmt->execute([$username, $password]);
-    header("Location: Homepage.php");
-    exit;
+    $user = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    if ($user) {
+      $_SESSION['user'] = $user;
+      if ($_SESSION['user']['role'] == 'user') {
+        header('Location: Homepage.php');
+      } else {
+        header('Location: Homepage.php');
+      }
+    } else {
+      echo "Invalid username or password";
+    }
   }
 }
 
