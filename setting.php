@@ -7,6 +7,7 @@
     <!-- Include Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <title>Settings</title>
+
 </head>
 
 <body class="bg-gradient-to-b from-white to-blue-200 h-screen relative flex flex-col">
