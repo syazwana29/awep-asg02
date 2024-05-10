@@ -6,8 +6,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $password = $_POST["password"];
 
   $servername = "localhost";
-  $db_username = "awepproject";
-  $db_password = "asg02";
+  $db_username = "root";
+  $db_password = "";
   $dbname = "aweproject";
 
   $login = new mysqli($servername, $db_username, $db_password, $dbname);
@@ -16,7 +16,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     die("Connection failed: " . $login->connect_error);
   }
 
-  // Prepared statement to prevent SQL injection
   $stmt = $login->prepare("SELECT id, username, password FROM users WHERE username = ?");
   $stmt->bind_param("s", $username);
   $stmt->execute();
@@ -26,7 +25,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_result($id, $db_username, $db_password_hash);
     $stmt->fetch();
 
-    // Verify password using password_verify function
     if (password_verify($password, $db_password_hash)) {
       $_SESSION["authenticated"] = true;
       $_SESSION["user_id"] = $id;
