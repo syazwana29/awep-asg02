@@ -74,7 +74,7 @@ $password = "JaneDoe123";
     <img src="./assets/left-arrow.png" alt="backarrow" class="h-10 w-10" onclick="window.history.back();" style="position: absolute; top: 0; left: 0;">
     <br>
     <div>
-        <h1 style="color: #78318C; text-align: center; font-size: 2em;">Jane Doe</h1>
+        <h1 style="color: #78318C; text-align: center; font-size: 2em; font-weight:bold;">Jane Doe</h1>
         <br>
         <div style="display: grid; align-items: center; justify-content: center; gap: 20px;">
             <div style="display: flex; align-items: center;">
