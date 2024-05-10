@@ -26,12 +26,22 @@
             z-index: -1;
         }
 
-        .logo {
+        .logo-container {
             position: absolute;
-            top: 10vh;
+            top: 5vh;
             left: 50%;
             transform: translateX(-50%);
+            text-align: center;
             z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo-container img {
+            position: relative;
+            margin-bottom: 5px;
+            /* Adjust the margin as needed */
         }
 
         .arrow {
@@ -48,7 +58,10 @@
         <img src="./assets/left-arrow.png" alt="filter" class="w-10 h-10 sm-only">
     </div>
 
-    <img src="./assets/LOGO.png" alt="logo" class="logo">
+    <div class="logo-container">
+        <img src="./assets/LOGO.png" alt="logo" class="logo">
+        <h1 class="text-4xl font-bold" style="color: white;">About Page</h1>
+    </div>
 
     <p class="text-center text-l">
         LearnTrack is dedicated to development of high-quality software,
@@ -71,9 +84,9 @@
     </p>
     <br>
     <p class="text-center text-l">
-        The strategic objective of LearnTrack is to achive user growth by
+        The strategic objective of LearnTrack is to achieve user growth by
         gaining more users through marketing campaigns and user referrals.
-        This will achieved by implementing a user-friendly interface,
+        This will be achieved by implementing a user-friendly interface,
         providing regular progress reports, and offering personalized study recommendations.
         The aim is to increase user engagement by at least 50% among registered users.
     </p>
