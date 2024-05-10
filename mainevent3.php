@@ -79,7 +79,7 @@
             <div class="text-center text-black">20</div>
             <div class="text-center text-black">21</div>
             <div class="text-center text-black">22</div>
-            <div class="text-center text-black font-bold"><a href="mainevent3.php">23</a></div>
+            <div class="text-center text-black font-bold">23</div>
             <div class="text-center text-black">24</div>
             <div class="text-center text-black">25</div>
             <div class="text-center text-black">26</div>
@@ -97,7 +97,12 @@
     </div>
 
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-6 bg-blue-300 rounded-lg">
-        <p class="text-2xl font-bold">...</p>
+        <p class="text-2xl font-bold">Exam:</p>
+        <p class="text-xl font-bold">Database Design and Implementation</p>
+        <p class="text-xl">Written test at 10.00</p>
+        <br>
+        <p class="text-xl font-bold">Cloud Services</p>
+        <p class="text-xl">Practical test at 2.30</p>
     </div>
 
     <!-- Navigation Bar at the Bottom -->
