@@ -14,9 +14,6 @@ $password = "JaneDoe123";
     <!-- Include Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <title>Settings</title>
-<<<<<<< HEAD
-
-=======
     <style>
         .modal {
             display: none;
@@ -64,7 +61,6 @@ $password = "JaneDoe123";
             cursor: pointer;
         }
     </style>
->>>>>>> 9b32482be9cea3b8a789290f7504728d9799f3b1
 </head>
 
 <body class="bg-gradient-to-b from-white to-blue-200 h-screen relative flex flex-col">

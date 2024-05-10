@@ -1,18 +1,17 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbName = "aweproject";
-// Create connection
-$conn = new mysqli($servername, $username, $password);
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
+$host = 'localhost';
+$port = 3306;
+$dbName = 'aweproject';
+$username = 'root';
+$password = '';
+
+$dsn = "mysql:host={$host};port={$port};dbname={$dbName};charset=utf8";
+
+try {
+  $pdo = new PDO($dsn, $username, $password);
+  $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+} catch (PDOException $e) {
+  echo "Connection failed: " . $e->getMessage();
+  exit();
 }
-// Create database if it doesn't exist
-$sql = "CREATE DATABASE IF NOT EXISTS $dbName";
-if ($conn->query($sql) !== TRUE) {
-  die("Error creating database: " . $conn->error);
-}
-// Select the database
-$conn->select_db($dbName);

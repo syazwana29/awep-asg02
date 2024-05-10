@@ -1,25 +1,21 @@
 <?php
 session_start();
-include 'db_connection.php';
+require 'db_connection.php';
+$username = $_POST['username'];
+$password = $_POST['password'];
+
 $sql = "SELECT * FROM users WHERE username = ? AND password = ?";
-$stmt = $conn->prepare($sql);
-$stmt->bind_param("ss", $_POST['username'], $_POST['password']);
-$stmt->execute();
-$result = $stmt->get_result();
-if ($result->num_rows > 0) {
-  // login success
-  $row = $result->fetch_assoc();
-  
-  $_SESSION['user'] = $row;
-  if ($_SESSION['user']['role'] == 'user') { // Check role from session
-    header('Location: Homepage.php'); // Update the location here
+$stmt = $pdo->prepare($sql);
+$stmt->execute([$username, $password]);
+$user = $stmt->fetch(PDO::FETCH_ASSOC);
+
+if ($user) {
+  $_SESSION['user'] = $user;
+  if ($_SESSION['user']['role'] == 'user') {
+    header('Location: Homepage.php');
   } else {
     header('Location: Homepage.php');
   }
 } else {
-  // login failed
   echo "Invalid username or password";
 }
-$stmt->close();
-$conn->close();
-?>
