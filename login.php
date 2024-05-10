@@ -6,8 +6,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $password = $_POST["password"];
 
   $servername = "localhost";
-  $db_username = "22FTTXXXX";
-  $db_password = "awep_asg02";
+  $db_username = "awepproject";
+  $db_password = "asg02";
   $dbname = "aweproject";
 
   $login = new mysqli($servername, $db_username, $db_password, $dbname);
@@ -16,20 +16,34 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     die("Connection failed: " . $login->connect_error);
   }
 
-  $sql = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";
-  $result = $login->query($sql);
+  // Prepared statement to prevent SQL injection
+  $stmt = $login->prepare("SELECT id, username, password FROM users WHERE username = ?");
+  $stmt->bind_param("s", $username);
+  $stmt->execute();
+  $stmt->store_result();
 
-  if ($result->num_rows == 1) {
-    $_SESSION["authenticated"] = true;
-    header("Location: Homepage.php");
-    exit();
+  if ($stmt->num_rows == 1) {
+    $stmt->bind_result($id, $db_username, $db_password_hash);
+    $stmt->fetch();
+
+    // Verify password using password_verify function
+    if (password_verify($password, $db_password_hash)) {
+      $_SESSION["authenticated"] = true;
+      $_SESSION["user_id"] = $id;
+      header("Location: Homepage.php");
+      exit();
+    } else {
+      $error_message = "Invalid username or password. Please try again.";
+    }
   } else {
     $error_message = "Invalid username or password. Please try again.";
   }
 
+  $stmt->close();
   $login->close();
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -51,10 +65,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <div class="mt-36 ml-10">
     <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
       <p class="text-sm font-medium mb-1">Username</p>
-      <input type="text" name="username" required>
+      <input type="text" name="username" value="Jane Doe" required>
 
       <p class="text-sm font-medium mt-2 mb-1">Password</p>
-      <input type="password" name="password" required>
+      <input type="password" name="password" value="JaneDoe123" required>
       <br>
       <button type="submit" class="mt-10 ml-20 text-2xl">Login</button>
     </form>
