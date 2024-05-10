@@ -8,17 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <title>Time Tracker</title>
     <style>
-        .selected-option {
-            filter: grayscale(0%);
-            transition: filter 0.3s ease;
-        }
-
-        .selected-option:hover {
-            filter: grayscale(0%);
-        }
-
-        .selected-option.clicked {
+        .clicked {
             filter: grayscale(0%) brightness(80%);
+            background-color: purple;
         }
     </style>
 </head>
@@ -42,9 +34,9 @@
 
     <!-- Container for Images in the Middle of the Screen -->
     <div class="flex flex-col items-center justify-center mt-4"> <!-- Added flexbox classes -->
-        <a href="javascript:void(0)" onclick="toggleOption('fifteen')"><img id="fifteen" src="assets/fifteenmins.png" alt="Fifteen Minutes" style="width: 375px; height: 71px; margin-left: 0px;"></a> <!-- Set width, height, and adjust left margin -->
-        <a href="javascript:void(0)" onclick="toggleOption('thirty')"><img id="thirty" src="assets/thirty.png" alt="Thirty Minutes" style="width: 375px; height: 71px; margin-left: 0px;"></a> <!-- Set width, height, and adjust left margin -->
-        <a href="javascript:void(0)" onclick="toggleOption('fortyfive')"><img id="fortyfive" src="assets/fortyfive.png" alt="Forty-Five Minutes" style="width: 375px; height: 71px; margin-left: 0px;"></a> <!-- Set width, height, and adjust left margin -->
+        <a href="#" onclick="toggleOption('fifteen')"><img id="fifteen" src="assets/fifteenmins.png" alt="Fifteen Minutes" style="width: 375px; height: 71px; margin-left: 0px;"></a> <!-- Set width, height, and adjust left margin -->
+        <a href="#" onclick="toggleOption('thirty')"><img id="thirty" src="assets/thirty.png" alt="Thirty Minutes" style="width: 375px; height: 71px; margin-left: 0px;"></a> <!-- Set width, height, and adjust left margin -->
+        <a href="#" onclick="toggleOption('fortyfive')"><img id="fortyfive" src="assets/fortyfive.png" alt="Forty-Five Minutes" style="width: 375px; height: 71px; margin-left: 0px;"></a> <!-- Set width, height, and adjust left margin -->
     </div>
 
     <!-- Start Studying image positioned more to the right -->
@@ -96,15 +88,24 @@
         // JavaScript function to set the selected option value
         function toggleOption(option) {
             var img = document.getElementById(option);
-            img.classList.toggle('clicked');
+            var allImages = document.querySelectorAll('img[id^="fifteen"], img[id^="thirty"], img[id^="fortyfive"]');
+
+            // Remove 'clicked' class from all images
+            allImages.forEach(function(image) {
+                image.classList.remove('clicked');
+            });
+
             var selectedOption = document.getElementById("selected-option");
             if (selectedOption.value === option) {
-                selectedOption.value = "";
+                selectedOption.value = ""; // If already selected, deselect it
             } else {
-                selectedOption.value = option;
+                img.classList.add('clicked'); // Add 'clicked' class to the clicked image
+                selectedOption.value = option; // Otherwise, select it
             }
         }
     </script>
+
+
 </body>
 
 </html>
