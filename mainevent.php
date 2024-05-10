@@ -71,7 +71,7 @@
             <div class="text-center text-black">12</div>
             <div class="text-center text-black">13</div>
             <div class="text-center text-black">14</div>
-            <div class="text-center text-black">15</div>
+            <div class="text-center text-black font-bold"><a href="mainevent2.php">15</a></div>
             <div class="text-center text-black">16</div>
             <div class="text-center text-black">17</div>
             <div class="text-center text-black">18</div>
@@ -79,7 +79,7 @@
             <div class="text-center text-black">20</div>
             <div class="text-center text-black">21</div>
             <div class="text-center text-black">22</div>
-            <div class="text-center text-black">23</div>
+            <div class="text-center text-black font-bold"><a href="mainevent3.php">23</a></div>
             <div class="text-center text-black">24</div>
             <div class="text-center text-black">25</div>
             <div class="text-center text-black">26</div>
