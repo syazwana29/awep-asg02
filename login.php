@@ -56,7 +56,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   </div>
 
   <div class="mt-36 ml-10">
-    <form method="post" action="login_process.php">
+    <form method="post" action="Homepage.php">
       <p class="text-sm font-medium mb-1" for="username">Username</p>
       <input id="username" type="text" name="username" required>
 
