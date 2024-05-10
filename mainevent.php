@@ -100,7 +100,7 @@
     </div>
 
     <div class="fixed bottom-0 left-0 w-full bg-yellow-300 px-4 py-2 sm:py-4 z-10 flex justify-center">
-        <div style="border-radius: 9999px; border: 4px solid white; padding: 5px;">
+        <div style="border-radius: 9999px; border: 4px solid white; padding: 5px;" onclick="window.location.href='NavigationTab.php'">
             <img src="assets/Studysched.png" alt="study schedule" class="h-12 w-12 sm:h-16 sm:w-16 object-cover">
         </div>
     </div>
