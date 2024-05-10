@@ -28,7 +28,7 @@
 
         .logo-container {
             position: absolute;
-            top: 5vh;
+            top: 2vh;
             left: 50%;
             transform: translateX(-50%);
             text-align: center;
@@ -40,7 +40,7 @@
 
         .logo-container img {
             position: relative;
-            margin-bottom: 5px;
+            /* margin-bottom: 1px; */
             /* Adjust the margin as needed */
         }
 
@@ -58,16 +58,11 @@
         <img src="./assets/left-arrow.png" alt="filter" class="w-10 h-10 sm-only" onclick="window.history.back();">
     </div>
 
-<<<<<<< HEAD
     <div class="logo-container">
         <img src="./assets/LOGO.png" alt="logo" class="logo">
         <h1 class="text-4xl font-bold" style="color: white;">About Page</h1>
     </div>
 
-=======
-    <img src="./assets/LOGO.png" alt="logo" class="logo">
-    <br>
->>>>>>> 9b32482be9cea3b8a789290f7504728d9799f3b1
     <p class="text-center text-l">
         LearnTrack is dedicated to development of high-quality software,
         with the goal of simplifying the learning process for users.
