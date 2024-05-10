@@ -2,12 +2,11 @@
 require 'db_connection.php';
 $errors = [];
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-  $username = $_POST['Jane Doe'];
-  $password = $_POST['JaneDoe123'];
+  $username = $_POST['username'];
+  $password = $_POST['password'];
 
-
-  if (empty($name)) {
-    $errors[] = "Name is required";
+  if (empty($username)) {
+    $errors[] = "Username is required";
   }
   if (empty($password)) {
     $errors[] = "Password is required";
