@@ -25,15 +25,15 @@
 
         <div class="container mx-auto">
             <div class="flex justify-around">
-                <div class="bg-white rounded-lg p-4 flex flex-col items-center justify-center " onclick="window.location.href='studyschedule.php'">
+                <div class="bg-white rounded-lg p-2 flex flex-col items-center justify-center " onclick="window.location.href='studyschedule.php'">
                     <img src="./assets/Studysched.png" alt="schedule">
                     <p class="text-lg">Study Schedule</p>
                 </div>
-                <div class="bg-white rounded-lg p-6 flex flex-col items-center justify-center" onclick="window.location.href='timetrackerhome.php'">
+                <div class="bg-white rounded-lg p-3 flex flex-col items-center justify-center" onclick="window.location.href='timetrackerhome.php'">
                     <img src="./assets/timetracker.png" alt="time tracker" class="h-30 w-30">
                     <p class="text-lg">Time Tracking</p>
                 </div>
-                <div class="bg-white rounded-lg p-4 flex flex-col items-center justify-center" onclick="window.location.href='TaskManager.php'">
+                <div class="bg-white rounded-lg p-2 flex flex-col items-center justify-center" onclick="window.location.href='TaskManager.php'">
                     <img src="./assets/task.png" alt="task manager">
 
                     <p class="text-lg">Task Manager</p>
