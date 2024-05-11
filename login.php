@@ -89,15 +89,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <p class="text-purple-900 ml-8 text-xl">Log In to continue</p>
   </div>
 
-<<<<<<< HEAD
-  <div class="form-container mt-36">
-    <form method="post" action="login_process.php">
-      <p class="text-m font-medium mb-1" for="username">Username</p>
-=======
   <div class="mt-36 ml-10">
     <form method="post" action="Homepage.php">
       <p class="text-sm font-medium mb-1" for="username">Username</p>
->>>>>>> 598c66dc8f99e1a2b93c09c1ded7bca3fc8f4cfe
       <input id="username" type="text" name="username" required>
 
       <p class="text-m font-medium mt-2 mb-1" for="password">Password</p>
