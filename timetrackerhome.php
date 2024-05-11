@@ -17,7 +17,7 @@
 
 <body class="bg-gradient-to-b from-white to-blue-200 h-screen relative">
     <div class="flex justify-between items-center px-4 py-2"> <!-- Added flexbox classes -->
-        <img src=" ./assets/left-arrow.png" alt="backarrow" class="h-10 w-10" onclick="window.history.back();">
+        <img src="./assets/left-arrow.png" alt="backarrow" class="h-10 w-10 cursor-pointer" onclick="goBackToHomepageOrNavigationTab();"> <!-- Modified onclick event -->
         <h1 class="text-center"><b>Time Tracker</b></h1> <!-- Centered heading -->
         <div></div> <!-- Empty div to maintain space -->
     </div>
@@ -103,9 +103,32 @@
                 selectedOption.value = option; // Otherwise, select it
             }
         }
+
+        // Function to navigate back to either homepage.php or navigationtab.php
+        // Function to navigate back to either homepage.php or navigationtab.php
+        function goBackToHomepageOrNavigationTab() {
+            var previousPageUrl = sessionStorage.getItem('previousPageUrl');
+            if (previousPageUrl.includes('homepage.php')) {
+                window.location.href = previousPageUrl;
+            } else if (previousPageUrl.includes('navigationtab.php')) {
+                window.location.href = previousPageUrl;
+            } else {
+                // Redirect to homepage.php as a default behavior
+                window.location.href = 'homepage.php';
+            }
+        }
+
+
+        // Function to store the previous page URL in session storage
+        function storePreviousPageUrl() {
+            sessionStorage.setItem('previousPageUrl', window.location.href);
+        }
+
+        // Call function to store the previous page URL when the page loads
+        window.onload = function() {
+            storePreviousPageUrl();
+        };
     </script>
-
-
 </body>
 
 </html>
