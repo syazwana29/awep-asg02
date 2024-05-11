@@ -3,11 +3,7 @@ $host = 'localhost';
 $port = 3306;
 $dbName = 'awepproject';
 $username = 'root';
-<<<<<<< HEAD
 $password = 'Llaman0tdrama';
-=======
-$password = '';
->>>>>>> e5f1ce85bb48d571036495481c32189b66ecd1bc
 
 $dsn = "mysql:host={$host};port={$port};dbname={$dbName};charset=utf8";
 
