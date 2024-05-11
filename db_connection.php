@@ -3,7 +3,7 @@ $host = 'localhost';
 $port = 3306;
 $dbName = 'aweproject';
 $username = 'root';
-$password = 'dksyazwana2911';
+$password = '';
 
 $dsn = "mysql:host={$host};port={$port};dbname={$dbName};charset=utf8";
 
